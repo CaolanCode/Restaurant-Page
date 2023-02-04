@@ -5,9 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Page</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .heading {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 2vh;
+        width: 25vw;
+        font-size: 2rem;
+      }
+      .description {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 50vw;
+        top: 15vh;
+        background-color: rgba(255, 235, 205, 0.8);
+        font-size: 2rem;
+        padding: 3vw;
+        border-radius: 5vw;
+      }
+    </style>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <div class="heading">
+        <h1>Lemongrass</h1>
+      </div>
+      <div class="description">
+        At Lemongrass, we’re serving up more than fish. In fact, Lemongrass's
+        Famous pizza is one of our unexpected specialties. Reminiscent of
+        butcher shops back in the day, each slow-smoked, sizzling prime chop
+        measures seven-fingers high. Our signature recipe, that we have
+        perfected for more than four decades, is rubbed with a secret blend of
+        seasonings, cured and roasted on a rotisserie with pecan wood for up to
+        six hours before it’s topped with Lemongrass's signature herb-garlic
+        butter, then carved tableside.
+      </div>
+      <div class="image">
+        <img src="../images/food.jpg" alt="image of food" />
+        <!-- Brooke Lark image from Unsplash -->
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
