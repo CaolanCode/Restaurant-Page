@@ -12,3 +12,7 @@
   align-items: center;
   justify-content: center;
 }
+.bg-image{
+  width: 80vw;
+  height: auto;
+}
