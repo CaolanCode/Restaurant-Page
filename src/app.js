@@ -1,5 +1,8 @@
 import header from './header'
 import './styles/style.css'
 
+const container = document.createElement('div')
+container.classList.add('container')
 
-document.body.appendChild(header())
+container.appendChild(header())
+document.body.appendChild(container)
