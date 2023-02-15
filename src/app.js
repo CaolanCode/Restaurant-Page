@@ -1,5 +1,6 @@
 import header from './header'
 import './styles/style.css'
+import aboutContent from './about'
 
 const container = document.createElement('div')
 container.classList.add('container')
@@ -9,6 +10,7 @@ imageContainer.classList.add('image-container')
 
 const tabContainer = document.createElement('div')
 tabContainer.classList.add('tab-container')
+tabContainer.appendChild(aboutContent())
 
 container.appendChild(header())
 
