@@ -3,7 +3,6 @@ const description = "All of our menu items are inspired by French cuisine and ha
 const about = () => {
   const content = document.createElement('div')
   content.innerText = description
-  content.classList.add('about-content')
   return content
 }
 
