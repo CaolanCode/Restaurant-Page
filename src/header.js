@@ -1,6 +1,6 @@
 const header = () => {
   const header = document.createElement('div')
-  header.innerText = "Welcome to Waterlilly Restaurant"
+  header.innerText = "Waterlily Restaurant"
   header.classList.add('header')
   return header
 }

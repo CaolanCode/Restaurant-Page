@@ -12,10 +12,20 @@
   align-items: center;
   justify-content: center;
 }
+
 .image-container{
   background: #FAEBD7 url('../images/food.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
   opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-container{
+  background: #FAEBD7;
+  height: 20vh;
+  width: 50vw;
 }
