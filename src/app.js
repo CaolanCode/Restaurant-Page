@@ -1,10 +1,11 @@
 import header from './header'
 import './styles/style.css'
-import background from './background.js';
 
 const container = document.createElement('div')
 container.classList.add('container')
+const imageContainer = document.createElement('div')
+imageContainer.classList.add('image-container')
 
 container.appendChild(header())
-container.appendChild(background())
+container.appendChild(imageContainer)
 document.body.appendChild(container)

@@ -5,14 +5,17 @@
 
 .header{
   background: #FAEBD7;
-  padding: 3vh;
+  height: 10vh;
   font-weight: 500;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bg-image{
-  width: 80vw;
-  height: auto;
+.image-container{
+  background: #FAEBD7 url('../images/food.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  opacity: 0.5;
 }
