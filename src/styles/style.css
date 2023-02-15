@@ -36,7 +36,7 @@
   box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.4);
   min-width: 30vw;
   min-height: 30vh;
-
+  max-width: 40vw;
 }
 
 .single-tab{
@@ -66,5 +66,5 @@
   width: fit-content;
   height: fit-content;
   flex: 4;
-  max-width: 50vw;
+  width: 100%;
 }

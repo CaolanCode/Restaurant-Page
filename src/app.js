@@ -2,6 +2,7 @@ import header from './header'
 import './styles/style.css'
 import aboutContent from './about'
 import menu from './menu'
+import contact from './contact'
 
 const container = document.createElement('div')
 container.classList.add('container')
@@ -42,20 +43,23 @@ function removeActiveClass() {
   })
 }
 
-function addAboutContent() {
-  if(aboutTab.classList.contains('active-tab')) return
+function addContent(element, foo) {
+  if(element.classList.contains('active-tab')) {
+    removeActiveClass()
+    return
+  }
   removeActiveClass()
-  aboutTab.classList.add('active-tab')
-  aboutTab.appendChild(aboutContent())
-}
-
-function addMenuContent() {
-  if(menuTab.classList.contains('active-tab')) return
-  removeActiveClass()
-  menuTab.classList.add('active-tab')
-  menuTab.appendChild(menu())
+  element.classList.add('active-tab')
+  element.appendChild(foo)
 }
 
 // listeners
-aboutTab.addEventListener('click', addAboutContent)
-menuTab.addEventListener('click', addMenuContent)
+aboutTab.addEventListener('click', function() {
+  addContent(aboutTab, aboutContent())
+})
+menuTab.addEventListener('click', function() {
+  addContent(menuTab, menu())
+})
+contactTab.addEventListener('click', function() {
+  addContent(contactTab, contact())
+})
