@@ -10,7 +10,6 @@ imageContainer.classList.add('image-container')
 
 const tabContainer = document.createElement('div')
 tabContainer.classList.add('tab-container')
-// tabContainer.appendChild(aboutContent())
 const aboutTab = document.createElement('div')
 aboutTab.classList.add('single-tab')
 aboutTab.innerText = 'About'
@@ -32,3 +31,11 @@ imageContainer.appendChild(tabContainer)
 container.appendChild(imageContainer)
 
 document.body.appendChild(container)
+
+function addAboutContent() {
+  if(aboutTab.classList.contains('active-tab')) return
+  aboutTab.classList.add('active-tab')
+  aboutTab.appendChild(aboutContent())
+}
+
+aboutTab.addEventListener('click', addAboutContent)

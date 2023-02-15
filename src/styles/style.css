@@ -3,6 +3,7 @@
   font-family: "Gill Sans", sans-serif;
 }
 
+/* header */
 .header{
   background: #FAEBD7;
   height: 10vh;
@@ -13,6 +14,7 @@
   justify-content: center;
 }
 
+/* background */
 .image-container{
   background: #FAEBD7 url('../images/food.jpg');
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url('../images/food.jpg');
@@ -24,19 +26,22 @@
   align-items: center;
 }
 
+/* tabs */
 .tab-container{
   background: #FAEBD7;
-  height: 30vh;
-  width: 40vw;
   display: flex;
   flex-direction: column;
   border-radius: 2vw;
   border: 1px solid black;
   box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.4);
+  min-width: 30vw;
+  min-height: 30vh;
+
 }
 
 .single-tab{
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -44,7 +49,22 @@
   font-weight: 500;
   cursor: pointer;
 }
+
 .middle-tab{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+.content{
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 1vh 1vw;
+}
+
+.active-tab{
+  width: fit-content;
+  height: fit-content;
+  flex: 4;
+  max-width: 50vw;
 }
