@@ -32,10 +32,21 @@ container.appendChild(imageContainer)
 
 document.body.appendChild(container)
 
+// functions
+function removeActiveClass() {
+  const active = document.querySelectorAll('.active-tab')
+  active.forEach(tab => {
+    tab.querySelectorAll('.content').forEach(el => el.remove())
+    tab.classList.remove('active-tab')
+  })
+}
+
 function addAboutContent() {
   if(aboutTab.classList.contains('active-tab')) return
   aboutTab.classList.add('active-tab')
   aboutTab.appendChild(aboutContent())
 }
 
+// listeners
 aboutTab.addEventListener('click', addAboutContent)
+menuTab.addEventListener('click', removeActiveClass)
