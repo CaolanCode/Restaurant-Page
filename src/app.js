@@ -1,6 +1,7 @@
 import header from './header'
 import './styles/style.css'
 import aboutContent from './about'
+import menu from './menu'
 
 const container = document.createElement('div')
 container.classList.add('container')
@@ -43,10 +44,18 @@ function removeActiveClass() {
 
 function addAboutContent() {
   if(aboutTab.classList.contains('active-tab')) return
+  removeActiveClass()
   aboutTab.classList.add('active-tab')
   aboutTab.appendChild(aboutContent())
 }
 
+function addMenuContent() {
+  if(menuTab.classList.contains('active-tab')) return
+  removeActiveClass()
+  menuTab.classList.add('active-tab')
+  menuTab.appendChild(menu())
+}
+
 // listeners
 aboutTab.addEventListener('click', addAboutContent)
-menuTab.addEventListener('click', removeActiveClass)
+menuTab.addEventListener('click', addMenuContent)
