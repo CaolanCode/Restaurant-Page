@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1vh solid #DEB887;
 }
 
 /* background */
@@ -20,7 +21,7 @@
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url('../images/food.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 89vh;
   display: flex;
   justify-content: center;
   align-items: center;
