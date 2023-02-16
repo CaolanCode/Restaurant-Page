@@ -6,4 +6,4 @@
 [View Restaurant webpage](https://caolancode.github.io/Restaurant-Page/)
 
 ### Screenshot
-<img src="./src/images/screenshot.png" alt="Restaurant webpage" width="200"/>
+<img src="./src/images/screenshot.png" alt="Restaurant webpage" width="500"/>
